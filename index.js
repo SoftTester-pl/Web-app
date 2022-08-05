@@ -1,6 +1,6 @@
 //import {getRandomCar} from './random.js';
 
-function getRandomCar() {
+const getRandomCar = () => {
   let cars = [
     { name: 'Honda', price: 20000 + "$" },
 
@@ -600,9 +600,6 @@ save.addEventListener('click', (e) => {
       createLi();
       },{once: true});
       
-      
-   
-      
        /* if (car.name === 'BMW'){
           let bmw2 = document.createElement('div');
           saved.innerHTML += `<div class="bmw2"> <img src="//carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/2020-BMW-M8-Coupe-Blue-1001x565.jpg"> </div>`;
@@ -615,9 +612,7 @@ save.addEventListener('click', (e) => {
         */
 
 })
-//after submit.addEventListener 'click' event is fired and function is executed and then car image is displayed in the div
-//and after click button "Zapisz zdjecie"
-//display that image in the savedCars div
+
 let log = document.querySelector('#username');
 let pass = document.querySelector('#pwd');
 let login = document.querySelector('#login');

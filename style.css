@@ -4,15 +4,18 @@ html {
 
 
 body{
+    flex-shrink: 1;
     background: rgb(190, 187, 186);
     background: linear-gradient(90deg, rgba(190, 187, 186,1) 0%, rgba(255, 255, 255,1) 100%);
+    
 }
 
 .container{
+    flex-shrink: 0;
     background-color: grey;
     background-image: url("https://c.wallhere.com/photos/17/0b/dark_abstract_monochrome_texture-2036485.jpg!d");
     background-size: cover;
-    width: 100%;
+  
     border: 1px black solid;
     border-radius: 5px;
 }
@@ -21,12 +24,12 @@ body{
 padding: 5em;
 margin: 4em;
 display: flex;
-flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 border: 1px black solid;
 border-radius: 5px;
 flex-direction: column;
+flex: 1 1 70%;
 box-shadow: 0 0 8px 0px rgb(0,0,0,1);
 overflow: hidden;
 background: linear-gradient(90deg, rgba(190, 187, 186,0.1) 0%, rgba(255, 255, 255,0.4) 100%);
@@ -95,6 +98,7 @@ min-height: 5px;
 
 .add:hover{
     background-color: hsl(var(--primary-hsl), .4);
+    color: #f5f5f7;
   }
 
 #submit{
@@ -109,6 +113,7 @@ position: relative;
 
 #submit:hover{
   background-color: hsl(var(--primary-hsl), .4);
+  color: #f5f5f7;
 }
 
 #login{
@@ -123,6 +128,7 @@ position: relative;
 
 #login:hover {
   background-color: hsl(var(--primary-hsl), .4);
+  color: #f5f5f7;
 }
 
 
@@ -137,6 +143,7 @@ position: relative;
 
 .save:hover{
     background-color: hsl(var(--primary-hsl), .4);
+    color: #f5f5f7;
   }
 
 .savedCars{
@@ -833,8 +840,6 @@ ul{
     display: none;
 }
 .photos{
-    width: 100%;
-    height: 100%;
     border-radius: 5px;
     display: flex;
     margin-top: 20px;
