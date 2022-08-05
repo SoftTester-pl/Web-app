@@ -1,0 +1,886 @@
+html {
+  font-family: Open Sans,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+
+body{
+    background: rgb(190, 187, 186);
+    background: linear-gradient(90deg, rgba(190, 187, 186,1) 0%, rgba(255, 255, 255,1) 100%);
+}
+
+.container{
+    background-color: grey;
+    background-image: url("https://c.wallhere.com/photos/17/0b/dark_abstract_monochrome_texture-2036485.jpg!d");
+    background-size: cover;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.center {
+padding: 5em;
+margin: 4em;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border: 1px black solid;
+border-radius: 5px;
+flex-direction: column;
+box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+overflow: hidden;
+background: linear-gradient(90deg, rgba(190, 187, 186,0.1) 0%, rgba(255, 255, 255,0.4) 100%);
+font-weight: 600;
+font-size: 0.95rem;
+margin-left: 30em;
+margin-right: 30em;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+ 
+.center h1 {
+font-size: 2em;
+font-weight: bold;
+}
+.center p {
+font-size: 1.5em;
+
+}
+.center a {
+font-size: 1.5em;
+font-weight: bold;
+}
+.center a:hover {
+text-decoration: underline;
+}
+.center img {
+width: 100%;
+}
+.center .center {
+padding: 0;
+margin: 0;
+}
+.center .center img {
+width: 100%;
+}
+.center .center .center {
+padding: 0;
+margin: 0;
+
+}
+label {
+flex-shrink: 1;
+flex-grow: 1;
+display: contents;
+
+}
+
+input{
+width: 12em;
+height: 25px;
+border: 1px black solid;
+min-height: 15px;
+border-radius: 3px;
+min-height: 5px;
+}
+
+.add{
+    width:10em;
+    height: 2em;
+    min-height: 15px;
+    pointer-events: visible;
+}
+
+.add:hover{
+    background-color: hsl(var(--primary-hsl), .4);
+  }
+
+#submit{
+width:10em;
+height: 2em;
+min-height: 15px;
+pointer-events: visible;
+z-index: 1;
+position: relative;
+
+}
+
+#submit:hover{
+  background-color: hsl(var(--primary-hsl), .4);
+}
+
+#login{
+    width: 10em;
+    height: 2em;
+    min-height: 15px;
+    pointer-events: visible;
+    z-index: 1;
+    position: relative;
+
+}
+
+#login:hover {
+  background-color: hsl(var(--primary-hsl), .4);
+}
+
+
+.save{
+  width: 10em;
+  height: 2em;
+  min-height: 15px;
+  pointer-events: visible;
+  z-index: 1;
+  position: relative;
+}
+
+.save:hover{
+    background-color: hsl(var(--primary-hsl), .4);
+  }
+
+.savedCars{
+  padding: 5em;
+  margin: 1em;
+  margin-top: 4.7em;
+  flex-grow: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+  overflow: hidden;
+  background-color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: 'Minion', sans-serif;
+  width: 440px;
+  height: 300px;
+  
+}
+
+
+.savedCars2{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  
+
+  }
+
+  .savedCars3{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars4{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars5{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars6{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars7{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars8{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars9{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars10{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars11{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars12{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars13{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars14{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars15{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars16{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars17{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+
+  .savedCars18{
+    padding: 5em;
+    margin: 1em;
+    margin-top: 4.7em;
+    flex-grow: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    overflow: hidden;
+    background-color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Minion', sans-serif;
+    width: 440px;
+    height: 300px;
+  }
+  
+
+
+ul{
+ 
+}
+
+.nav{
+    align-items: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    overflow: hidden;
+    font-size: 0.8rem;
+    font-family: 'Minion', sans-serif;
+    font-weight: 900;
+   
+}
+
+.BMW {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.merc {
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.audi{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.honda{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.toyota{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.nissan{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+
+.mazda{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.ford{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.porshe{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.ferrari{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.lamborghini{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.mclaren{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.bugatti{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.bentley{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.rolls{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.maybach{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.koenigsegg{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.pagani{
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    display: none;
+}
+.photos{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0px rgb(0,0,0,1);
+    background-color: black;
+}
+.cars{
+    
+    border-radius: 5px;
+    display: flex;
+    
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.meme{
+    border-radius: 5px;
+    display: none;
+}
+
+.buy{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    text-align: center;
+    font-size: 1.2em;
+    white-space: pre-wrap;
+    mix-blend-mode: multiply;
+}
+
+
+ul {
+    width: 15em;
+    list-style-type: none;
+    text-align: center;
+}
