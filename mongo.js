@@ -1,5 +1,5 @@
 const mongoClient = require('mongodb').MongoClient;
-// odpalanie bazy danych lokalnie
+// local database 
 const url = 'mongodb://127.0.0.1:27017';
 const dbname = 'mongo-test';
 
